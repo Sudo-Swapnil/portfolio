@@ -355,6 +355,10 @@ body.nav-active { overflow: hidden; }
 
 
 
+.resume {
+  padding-block-start: calc(var(--section-padding) + 5px);
+  background-color: var(--cultured);
+}
 
 
 /*-----------------------------------*\
@@ -393,6 +397,7 @@ body.nav-active { overflow: hidden; }
   bottom: 10%;
   right: 2%;
   filter: drop-shadow(var(--shadow-2));
+  border-radius: 25px;
 }
 
 .hero-content { text-align: center; }
