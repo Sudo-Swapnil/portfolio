@@ -474,9 +474,11 @@ body.nav-active { overflow: hidden; }
 .project .grid-list { gap: 40px; }
 
 .project-card {
-  --padding: 24px;
+  --padding: 12px;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: var(--padding);
   border-radius: var(--radius-8);
@@ -487,7 +489,7 @@ body.nav-active { overflow: hidden; }
 .project-card-2,
 :is(.project-card-3, .project-card-4) .card-content { padding: var(--padding); }
 
-.project-card-1 { padding-block-end: 0; }
+/* .project-card-1 { padding-block-end: 0; } */
 
 .project :is(.project-card-3, .project-card-4) { gap: 0; }
 
@@ -594,7 +596,7 @@ textarea.input-field {
    * PROJECT
    */
 
-  .project-card { --padding: 68px; }
+  .project-card { --padding: 48px; }
 
 
 
@@ -808,17 +810,18 @@ textarea.input-field {
   .project-card-1,
   .project-card-2 {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
   }
 
   :is(.project-card-1, .project-card-2) .card-content { width: 33.33%; }
 
   :is(.project-card-1, .project-card-2) .card-banner { width: 66.66%; }
 
-  .project-card-1 .card-content { padding-block-end: var(--padding); }
+  /* .project-card-1 .card-content { padding-block-end: var(--padding); } */
 
   .project-card-2 .card-content { order: 1; }
 
+  
 
 
   /**
@@ -832,7 +835,6 @@ textarea.input-field {
   }
 
 }
-
 
 
 
@@ -869,7 +871,11 @@ textarea.input-field {
 }
 
 
-
+.card-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /**
